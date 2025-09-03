@@ -1,0 +1,1133 @@
+Delivered-To: lysfernandagodoi@gmail.com
+Received: by 2002:a59:ba4c:0:b0:4eb:9d98:4389 with SMTP id p12csp129149vqh;
+        Wed, 27 Aug 2025 04:00:13 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IGAYX4xrrXNpBQMr7b1BQnmyuj/sg5AfA/2w6sAoduh8SzdXXJHQt7k25tLfl/SCBkug8xJ
+X-Received: by 2002:a05:622a:4d8c:b0:4b2:d10e:50cf with SMTP id d75a77b69052e-4b2d10e57b5mr140570551cf.15.1756292412840;
+        Wed, 27 Aug 2025 04:00:12 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1756292412; cv=none;
+        d=google.com; s=arc-20240605;
+        b=F9k+F6gfczELczLBDJj04gU5NuJTGf92W6yx4tfcsMTqH9Y9RtxhjbTVzvUi37wQaY
+         lQqJny0DL1hT8RFe5Xf3/ZWYW2m26hhLHnUkVLKV/RiquH+J0hL+K7egqXFtg0VTCMeG
+         IzjG20fONEuwr5DJTSnoYo02l9Mt1uXt+C2YdNDD/rWq/5Fra9O6ckYc8I93iKBnsigx
+         Ungw+X5mBKy0V0pDs98ynsY+P4HEb5jRhRgLpReYIeMQ0rAtU4oPaVIBN1MMMPS79nj5
+         SYgujnRP4kx+z57Kc8WoXz6svQjH336bLc4CRhjp4Gxa7NpfW6e3EsLLcJumHvONMluu
+         VeEg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=feedback-id:list-unsubscribe-post:precedence:mime-version:subject
+         :message-id:to:reply-to:from:date:list-unsubscribe:dkim-signature
+         :dkim-signature;
+        bh=FwOOUrZNF7TM0qL9mMxoLjgLQ93OGOzQVuIIZR+HAhs=;
+        fh=h5l8b/y8+cXwtahas2V93tk5UY1QgzfuGEfmVwiAyYg=;
+        b=Uq+3LM9PXWVfaBWqzCReKnqynhPJIQ530wc1w4c0fbubv2MS589opvpLp6J+k90EB7
+         PYr31QHJIzng3aN3n7rdPFvt4xM6aH7w9LvzscFlmEXCOO9Z4KC+ElZrFJ20FRfjTOye
+         5g7F4icjccLuTS3nePwcTCFveEFS+rdWnD8R0Ajb8iqGr4iStXdCJuH8dGfRVnt9Ys6l
+         41oyWG4Ot/RmAuRslVQ4hWfvGAwbWftOPEEOY/dvmIAehISTR39LqK4VoX5+TtBju0/i
+         Ctm8XtnqDMOdG36THNjoFKv5qISbO4KrXTHJM84b+yC8Zo35J/pW+4D9zOFN3JQaVSmu
+         ZN/Q==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@bf51x.hubspotemail.net header.s=hs2 header.b=bXH3lmMX;
+       dkim=pass header.i=@7daysofcode.io header.s=hs2-21748317 header.b=MM8VG5MM;
+       spf=pass (google.com: domain of 1axcak6foyabcbhfmnjvgakgahef1t3g1d6qvj@bf51x.hubspotemail.net designates 143.244.89.163 as permitted sender) smtp.mailfrom=1axcak6foyabcbhfmnjvgakgahef1t3g1d6qvj@bf51x.hubspotemail.net;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=7daysofcode.io
+Return-Path: <1axcak6foyabcbhfmnjvgakgahef1t3g1d6qvj@bf51x.hubspotemail.net>
+Received: from bd77gad.bf51x.hubspotemail.net (bd77gad.bf51x.hubspotemail.net. [143.244.89.163])
+        by mx.google.com with ESMTPS id d75a77b69052e-4b2b8e715ddsi45483931cf.1032.2025.08.27.04.00.12
+        for <lysfernandagodoi@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 27 Aug 2025 04:00:12 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 1axcak6foyabcbhfmnjvgakgahef1t3g1d6qvj@bf51x.hubspotemail.net designates 143.244.89.163 as permitted sender) client-ip=143.244.89.163;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@bf51x.hubspotemail.net header.s=hs2 header.b=bXH3lmMX;
+       dkim=pass header.i=@7daysofcode.io header.s=hs2-21748317 header.b=MM8VG5MM;
+       spf=pass (google.com: domain of 1axcak6foyabcbhfmnjvgakgahef1t3g1d6qvj@bf51x.hubspotemail.net designates 143.244.89.163 as permitted sender) smtp.mailfrom=1axcak6foyabcbhfmnjvgakgahef1t3g1d6qvj@bf51x.hubspotemail.net;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=7daysofcode.io
+Received: by 172.16.139.55 with SMTP id a0b9znrox27ui21r9qn5ojbeidsrizuwie46fazf5ol;
+        Wed, 27 Aug 2025 11:00:12 GMT
+DKIM-Signature: v=1; s=hs2; d=bf51x.hubspotemail.net; 
+        i=@bf51x.hubspotemail.net; 
+        h=sender:from:from:reply-to:to:to:cc:cc:subject:subject:list-unsubscribe:form-sub:feedback-id:list-unsubscribe-post; 
+        a=rsa-sha256; c=relaxed/relaxed; 
+        bh=FwOOUrZNF7TM0qL9mMxoLjgLQ93OGOzQVuIIZR+HAhs=; 
+        b=bXH3lmMXFKm9Er0Cx4BhC9a0KGqDjZ9lpDHO9nNl8N7hWJImZWK+9fGuO39O7b
+         FEyyF6bNCCtS/c4YOh3+SMRFnJaMJKdnefSSssoZ2dWn3/YRnSm/CFgXlFXsQju
+         81eVeOKizy8yGJKDZ1zTV+zI0JknCGgFqDeUPcPc1c4H/rZAkQmertnM+EI/yL0
+         qJaYYKNTRRjh5uYP4l4d5FQLhZVaaPy572wTKx7tAMcZbWFeBIMLydxSWWZ7h/+
+         uTBoiwJK6Yt/lJW1rYCNap5nKnnhkx1kkH6+XVacJhO9J5QtvqEZUCzE7KiNb2Q
+         S8JO4vQ/A6f504L95piKKW7Q/dpg==; q=dns/txt; t=1756292412; 
+        x=1756555212;
+DKIM-Signature: v=1; s=hs2-21748317; d=7daysofcode.io; 
+        i=@7daysofcode.io; 
+        h=sender:from:from:reply-to:to:to:cc:cc:subject:subject:list-unsubscribe:form-sub:feedback-id:list-unsubscribe-post; 
+        a=rsa-sha256; c=relaxed/relaxed; 
+        bh=FwOOUrZNF7TM0qL9mMxoLjgLQ93OGOzQVuIIZR+HAhs=; 
+        b=MM8VG5MMqv4YDyZZ46pExDGUS8sgNPScKnkwKKM0WnJ1ATA4tiUKE04WPXFX0L
+         T4Ny39RtXSMwPc8mWMyvEO6cji1MWNZS0VgQSXlt1YmDMmL568dpA2HoJrH5it6
+         gnccWQyGplgqGC7SPV45z8IhXYXPwexRg2CrXpi5XSpNGNdBclVwkE2EMLw8ov7
+         TvHacI+3b7rdi0yRIn3+zZ5aYkwxDIZ/z6aT2ta+hvMfchFV83JTCEQb5sAVvB1
+         rW/h4Mylo0wVH1kq1BHpbAYPTCDBqbmcUNTjVqJoHTGWQO0B3TEVkg6RLv1nhpU
+         gZ9j7Utwr742hwVR1X6aGxb3NK/g==; q=dns/txt; t=1756292412; 
+        x=1756555212;
+Return-Path: <1axcak6foyabcbhfmnjvgakgahef1t3g1d6qvj@bf51x.hubspotemail.net>
+X-HS-Cid: 1axf3yqzjbyztebx4ks9wuc351z2467pf41wgf
+List-Unsubscribe: <mailto:1axc70lcuq3dcxek1rg6r0kexwzkcu0ei0wbrj@bf51x.hubspotemail.net?subject=unsubscribe>, <https://empresas.alura.com.br/hs/subscription-preferences/v2/unsubscribe-all?data=W2nXS-N30h-zBW3P0QBZ2RBzgGW4crjqt4ph_2gW2nNZdT2sFqtPW3BV-2v2vBl9FW2Kn6mt4cvcd6W4cGl8K41YXf_W3SXWVF2-F489W45wGLR257x31W49HLSW3ddkdwW3yWGsK2D1LKSW1Nz6tl3hYWx6W49xY9W4r9-hQW3bm9nT3dtDbgW3M3CDn21c9rCW49sh573bbSQkW2HsXg92HH_b1W1V8Nmp3K73ZBW2Ry3wQ4rjd-tW3XNXyF4hMpxsW4rq3sg3HbHDhW2Mp9GV4pC9W4W4fKSVf4ry3SwW1BrGWJ1X81J2W1Scs3W2w3b8vW2FV8m91ZwrtgW4tDxhZ1Bv8nwW49lsnB3ZThNXW1Lj9cW1S0-rmW1Xb-Yz30r3kSW1VvzqM4rGKbTW2RwVqT3JJp-wW2xxf_d2vLhtSW2zMvfz1Vd4_JW2pbps72-9YCsW4frVtV3ddL9LW4twdJt2HzLbPW3b8Ms63yX2TTW3DScSB30tD9sW3Y25m43KcbD2W3LSysG2xLRKxW3SNBRw41Jz7qW2-Kfdf1S9Pr2W1XqbJD23bbcRW3M36-h4cLV1dW380_DG3dtFf5W2Yqf_Y2KqCMtW43RTcp3dh8C7W2-s59t4kcV1GW49QT5T4fM5zhW1-XdjB25p9CMf1SrW0J04>
+Date: Wed, 27 Aug 2025 08:00:12 -0300
+From: Francisco Foz <contato@7daysofcode.io>
+Reply-To: contato@alura.com.br
+To: lysfernandagodoi@gmail.com
+Message-ID: <1756292412360.c9ddd75c-1414-4403-94e4-d5c40e2b191a@bf51x.hubspotemail.net>
+Subject: =?utf-8?Q?#7DaysOfCode_-_Python_Pandas_?=
+ =?utf-8?Q?2/7:_=F0=9F=91=A9=F0=9F=8F=BD=E2=80=8D=F0=9F=92=BB_L?=
+ =?utf-8?Q?impeza_de_dados?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_26242_1850916013.1756292412544"
+Precedence: bulk
+X-Report-Abuse-To: abuse@hubspot.com (see
+ https://policy.hubspot.com/abuse-complaints)
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Feedback-ID: aem8fd7:aierj4vg:aib1s:HubSpot
+
+------=_Part_26242_1850916013.1756292412544
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+E a=C3=AD, Lisandra Fernanda de, conseguiu desenvolver o desafio do primeir=
+o dia e j=C3=A1 est=C3=A1 tudo pronto para o pr=C3=B3ximo?
+
+S=C3=B3 pra garantir, vou deixar sempre a minha resolu=C3=A7=C3=A3o l=C3=A1=
+ no final deste e-mail, beleza? Assim voc=C3=AA pode comparar com a sua, ma=
+s n=C3=A3o esque=C3=A7a de compartilhar comigo as suas resolu=C3=A7=C3=B5es=
+, quero ver tamb=C3=A9m!
+
+Hoje =C3=A9 o segundo dia do seu desafio #7DaysOfCode com Python Pandas, bo=
+ra praticar?
+
+Ontem voc=C3=AA importou e organizou os dados. Hoje, voc=C3=AA ir=C3=A1 com=
+e=C3=A7ar a manipul=C3=A1-los, ou seja, tirar o que n=C3=A3o for necess=C3=
+=A1rio, agrupar dados, atribuir novas informa=C3=A7=C3=B5es, etc.
+
+Claro, os dados precisam fazer sentido e estar preparados para o contexto d=
+a an=C3=A1lise a ser realizada. Por isso, a =E2=80=9Climpeza=E2=80=9D dos d=
+ados =C3=A9 uma parte essencial em um projeto de ci=C3=AAncia de dados.
+
+Voc=C3=AA ir=C3=A1 iniciar a limpeza e atribuir mais contexto aos seus dado=
+s para depois aprofundar-se nas an=C3=A1lises.
+
+A Ci=C3=AAncia de Dados =C3=A9 uma =C3=A1rea interdisciplinar que abrange p=
+rograma=C3=A7=C3=A3o, matem=C3=A1tica/estat=C3=ADstica e conhecimento do ne=
+g=C3=B3cio. Seu objetivo =C3=A9 extrair de dados, informa=C3=A7=C3=B5es =C3=
+=BAteis que agregam valor e resolvem problemas. Entender o neg=C3=B3cio =C3=
+=A9 fundamental para que n=C3=A3o se tenha an=C3=A1lises sem explica=C3=A7=
+=C3=B5es ou mesmo sem o foco necess=C3=A1rio para a resolu=C3=A7=C3=A3o dos=
+ problemas.
+
+Voc=C3=AA deve ter visto que tem uma coluna identificada como =E2=80=9Cloca=
+liza=C3=A7=C3=A3o=E2=80=9D e diversos n=C3=BAmeros nela, mas voc=C3=AA sabe=
+ o que significam estes n=C3=BAmeros?
+
+"Os itens do acervo em uma biblioteca s=C3=A3o organizados por um sistema d=
+e classifica=C3=A7=C3=A3o de acordo com o respectivo tema. Existem diversos=
+ sistemas, mas este conjunto est=C3=A1 de acordo com a CDU - Classifica=C3=
+=A7=C3=A3o Decimal Universa (https://empresas.alura.com.br/e3t/Ctc/I8+113/d=
+2z6gD04/VWX6ZJ3mHDBKV73CSB78R_5rVZjc4S5BKYd3N7jDJw03l5QzW7Y8-PT6lZ3lXW7Qgkr=
+L7kbvv7W7ttZfx3h-rVCW7RBfXv243HzzW2WGcTr86TklkW5mx_c124M5VhW5y1p2H1HdHsnW4W=
+4BKb952G3PW1vSQg95bT_VZW8hzt7274WcT1W6t7JV15JRfKnW16D0Vb65cyV_MRXB1NVqs-fW9=
+4RTgM3l6gKZN6RHw_Czlh12N5DDPRRwR28qVwsfCQ2d07L8N4h99hvpN1X7W2Qm9GR1zXb4hW6H=
+gZJ11Pf49yW1V3mcn1wz0YDW702gNb3bg900W2X2SPl70Ng-cW1F3J7q7N6Rx9W1d8KcF1y5P78=
+VP1_3m2-PMsqVJMfZZ9bNKtpf4vP46x04 ) l. Esta classifica=C3=A7=C3=A3o =C3=A9 =
+decimal, pois varia de acordo com a classe de cada assunto:
+
+- 000 a 099: Generalidades. Ci=C3=AAncia e conhecimento.
+- 100 a 199: Filosofia e psicologia.
+- 200 a 299: Religi=C3=A3o.
+- 300 a 399: Ci=C3=AAncias sociais.
+- 400 a 499: Classe vaga. Provisoriamente n=C3=A3o ocupada.
+- 500 a 599: Matem=C3=A1tica e ci=C3=AAncias naturais.
+- 600 a 699: Ci=C3=AAncias aplicadas.
+- 700 a 799: Belas artes.
+- 800 a 899: Linguagem. L=C3=ADngua. Lingu=C3=ADstica.
+- 900 a 999: Geografia. Biografia. Hist=C3=B3ria."
+
+Portanto, se um material tiver um c=C3=B3digo de localiza=C3=A7=C3=A3o 720,=
+ ele est=C3=A1 dentro da classe geral de =E2=80=9CBelas Artes=E2=80=9D; ou =
+se tiver um c=C3=B3digo 028, estar=C3=A1 dentro da classe geral de =E2=80=
+=9CGeneralidades. Ci=C3=AAncia e conhecimento=E2=80=9D.
+
+Para isso, crie uma nova coluna com os valores da localiza=C3=A7=C3=A3o, pa=
+ra refletir a respectiva classe geral na CDU.
+
+Voc=C3=AA precisar=C3=A1 ainda excluir alguns dados e modificar outros.
+
+A coluna "registro_sistema", por exemplo, n=C3=A3o est=C3=A1 fazendo sentid=
+o para essa an=C3=A1lise, por isso voc=C3=AA pode exclui-la.
+
+J=C3=A1 a coluna da matricula (=E2=80=9Cmatricula_ou_siape=E2=80=9D) n=C3=
+=A3o est=C3=A1 com um formato muito leg=C3=ADvel. Transforme-a em formato S=
+tring.
+
+DICA
+
+Para mapear os valores, voc=C3=AA pode usar uma l=C3=B3gica condicional de =
+acordo com a numera=C3=A7=C3=A3o e armazen=C3=A1-los em uma lista.
+
+EXTRA
+
+D=C3=AA uma olhada nesse texto da Alura (https://empresas.alura.com.br/e3t/=
+Ctc/I8+113/d2z6gD04/VWX6ZJ3mHDBKV73CSB78R_5rVZjc4S5BKYd3N7jDJwj3l5QzW8wLKSR=
+6lZ3q6W1Yfbzq4JrScMW8jG3_64cJcZ7W7GkJMZ4WXkNsW3bb0-q88rzGkW6SLMW92fQMTyW8-j=
+xSy6BQTd2W7bZV-J6L0HQrW3jlS757Ls1g4W4P9rJ51qWs8kV6SV2_856-ZfW2hy-QD6_F7lLW7=
+YYGW24slPyhW4Q5YkX45Kn9dVZcZcz6HR100MDtYph9S68qW2CZgjp4Rhg0cW1hR9ZZ3WJf-HVh=
+CPdp2pW91-N4Qhz7T3Rpv6W26vF-Y7_NG04N6xsPYNwhMcwW6P_Mz12rpwDFW4v7vFb59QH75W7=
+FD54j7zz6XSW8_xMyg4NtbCdW68qWrf7rgV-lW6f_9wt8PYkjVW6rBcX95qCnmZf3NdCYH04 ) =
+ sobre como adicionar elementos em uma lista.
+
+RESPOSTA DO EXERC=C3=8DCIO DO DIA 1
+
+- Solu=C3=A7=C3=A3o do Dia 1 (https://empresas.alura.com.br/e3t/Ctc/I8+113/=
+d2z6gD04/VWX6ZJ3mHDBKV73CSB78R_5rVZjc4S5BKYd3N7jDJwC3l5QzW95jsWP6lZ3ltVR3Hn=
+M91xVf_W5m2gmN40KxFsW6RbQcL1DFx1FW2dLK4P3xvhJZW8tZYZS2rYmspW78NcLX3V78mcW5X=
+4kWx2-tKmMW8fVgWy7gmzyWVK0TQK6RcXx6VZGP5s8pTC3VN4zk5X6fCqkyW3zTNVw5_TKjyW8K=
+LbMh6V_Pp0W8hxF-D4y3krjW9863-m3b3K76W2K0Tf54r095JVTzm-26NntJZW6HKTZN3BdCXRW=
+56MZ2Q4RxwyGW2nVqqt3HQXrSW8rXQZJ77pG3rW6YNf7f3g6TKKW8P2nRK6vvpBNW7JPnl58gQS=
+p2W6FsgLk7w_8p1VtSWSq4_jJS6W29jnkm3fVQdHW3VJpfq7V384JW1ncLlM1rdwm8W2hqmZ98z=
+608Wf8HXKyY04 )
+
+Bom desafio, te vejo amanh=C3=A3 nesse mesmo hor=C3=A1rio!
+
+Ah, lembre-se de compartilhar o seu c=C3=B3digo no seu GitHub e nas suas re=
+des sociais com a hashtag #7DaysOfCode.
+
+Francisco Foz
+
+Bibliotec=C3=A1rio e Analista de Dados
+
+Alura, Vila Mariana, S=C3=A3o Paulo, SP
+
+N=C3=A3o quero mais receber os Desafios (https://empresas.alura.com.br/hs/p=
+references-center/pt/direct?data=3DW2nXS-N30h-BrW3P0X_G43zPWQW4fFJhY4kBlTGW=
+4cv7r238kGXkW3_wpgN3jb7MkW1W-_QS2zKQ2hW252x-N3bfh72W4mbNB63dbd9bW2TRdlx2KPc=
+gNW3P8qmQ2WFwwHW2zKqjG4fFf81W2FtX-41_9NBZW2TydXd43DdHMW2Cvyf-3z7THwW3MbBG-2=
+-LVbjW3ghkWb2v_TfLW3JVLyL3dkb-dW36xdcC3M0GPRW1Q3KF83_pBkwW3yPMHz2KC89CW3NQB=
+c-1Y_9sQW1VjBnL32xgxWW2Rsy6F2WxK-_W20YJ242-cdYRW1VzQR_30r5JMW2nXqs71VzlrXW2=
+-GM2j3f__SqW1VjcVZ2xXTWLW1QktVy41SwlMW3DMlL_1S4lk1W4kcsLl4twJnJW1NsL0d1QrKW=
+4W2-MKYn2KFHKcW45PGV02YMZkSW3NXvkJ3LQ2V0W2-Jppw3yRnXlW2-bjmW3XN4q9W1Y_BYc2P=
+WtqvW2z-_mn2sZW2JW4mm67N2PWpc9W3XvDBK2KslVDW2WnnC749J_QHW32q2153ZsJ65W23gRl=
+l2-bRQ_W4t2Mzj3z9d90W41W1qy2YpT7LW3Hc2K02FBnHMW3XNy913_XTLCW3_Bb053ZV95fW32=
+pHfP2Pmhj4W4rCpDx2MBznDW4rb1mb3z9-570&_hsenc=3Dp2ANqtz-_R2Fi2O4n8AGk7DbzZE4=
+RKP7_TpTt9R8JE95Ov8AZcjckNJ9-OHISP10YHi_1ftOozZyO-byu60B3iHRm5SezA2y8SNP51m=
+XpA-sYWucJ_EKhohBc&_hsmi=3D270877722 )
+------=_Part_26242_1850916013.1756292412544
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3=
+.org/1999/xhtml" xmlns:o=3D"urn:schemas-microsoft-com:office:office" xmlns:=
+v=3D"urn:schemas-microsoft-com:vml" lang=3D"pt"><head>
+    <title>#7DaysOfCode - Python Pandas 2/7: =F0=9F=91=A9=F0=9F=8F=BD=E2=80=
+=8D=F0=9F=92=BB Limpeza de dados</title>
+    <meta property=3D"og:title" content=3D"#7DaysOfCode - Python Pandas 2/7=
+: =F0=9F=91=A9=F0=9F=8F=BD=E2=80=8D=F0=9F=92=BB Limpeza de dados">
+    <meta name=3D"twitter:title" content=3D"#7DaysOfCode - Python Pandas 2/=
+7: =F0=9F=91=A9=F0=9F=8F=BD=E2=80=8D=F0=9F=92=BB Limpeza de dados">
+   =20
+   =20
+   =20
+<meta name=3D"x-apple-disable-message-reformatting">
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D1.=
+0">
+    <!--[if gte mso 9]>
+  <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+    <w:WordDocument xmlns:w=3D"urn:schemas-microsoft-com:office:word">
+      <w:DontUseAdvancedTypographyReadingMail/>
+    </w:WordDocument>
+  </xml>
+ =20
+  <style>
+    ul > li {
+      text-indent: -1em;
+    }
+  </style>
+<![endif]-->
+<!--[if mso]>
+<style type=3D"text/css">
+ body, td {font-family: Arial, Helvetica, sans-serif;}
+ .hse-body-wrapper-table {background-color: #000000;}
+</style>
+<![endif]-->
+<!--[if mso | IE]>
+  <style type=3D"text/css">
+    .hse-column-container { border: none !important; padding: 0 !important;=
+ }
+  </style>
+<![endif]-->
+   =20
+     =20
+ =20
+ =20
+   =20
+  <meta name=3D"generator" content=3D"HubSpot"><meta property=3D"og:url" co=
+ntent=3D"https://empresas.alura.com.br/-temporary-slug-7b5b7ace-9913-43c8-9=
+5e1-0c60baceddb9"><meta name=3D"robots" content=3D"noindex,follow"><!--[if =
+!((mso)|(IE))]><!-- --><style type=3D"text/css">@media only screen and (max=
+-width:639px){img.stretch-on-mobile,.hs_rss_email_entries_table img,.hs-str=
+etch-cta .hs-cta-img{height:auto !important;width:100% !important}
+.display_block_on_small_screens{display:block}.hs_padded{padding-left:20px =
+!important;padding-right:20px !important}
+.hs-hm,table.hs-hm{display:none}.hs-hd{display:block !important}table.hs-hd=
+{display:table !important}
+}@media only screen and (max-width:639px){.hse-border-m{border-left:1px sol=
+id #ccc !important;border-right:1px solid #ccc !important;box-sizing:border=
+-box}
+.hse-border-bottom-m{border-bottom:1px solid #ccc !important}.hse-border-to=
+p-m{border-top:1px solid #ccc !important}
+.hse-border-top-hm{border-top:none !important}.hse-border-bottom-hm{border-=
+bottom:none !important}
+}.moz-text-html .hse-column-container{max-width:600px !important;width:600p=
+x !important}
+.moz-text-html .hse-column{display:table-cell;vertical-align:top}.moz-text-=
+html .hse-section .hse-size-12{max-width:600px !important;width:600px !impo=
+rtant}
+@media only screen and (min-width:640px){.hse-column-container{max-width:60=
+0px !important;width:600px !important}
+.hse-column{display:table-cell;vertical-align:top}.hse-section .hse-size-12=
+{max-width:600px !important;width:600px !important}
+}@media only screen and (max-width:639px){.hse-body-wrapper-td{padding-top:=
+20px !important}
+#section-0 .hse-column-container{background-color:#000 !important} }@media =
+only screen and (max-width:639px){.hse-body-wrapper-td{padding-bottom:20px =
+!important}
+#section-10 .hse-column-container{background-color:transparent !important}#=
+section-10 .hse-column-container{background-color:transparent !important}
+}</style><!--<![endif]--><style type=3D"text/css">#hs_body #hs_cos_wrapper_=
+main a[x-apple-data-detectors]{color:inherit !important;text-decoration:non=
+e !important;font-size:inherit !important;font-family:inherit !important;fo=
+nt-weight:inherit !important;line-height:inherit !important}
+a{text-decoration:underline}p{margin:0}body{-ms-text-size-adjust:100%;-webk=
+it-text-size-adjust:100%;-webkit-font-smoothing:antialiased;moz-osx-font-sm=
+oothing:grayscale}
+table{border-spacing:0;mso-table-lspace:0;mso-table-rspace:0}table,td{borde=
+r-collapse:collapse}
+img{-ms-interpolation-mode:bicubic}p,a,li,td,blockquote{mso-line-height-rul=
+e:exactly}</style></head>
+  <body id=3D"hs_body" bgcolor=3D"#000000" style=3D"margin:0 !important; pa=
+dding:0 !important; font-family:Arial, sans-serif; font-size:18px; color:#f=
+fffff; word-break:break-word">
+   =20
+   =20
+<!--[if gte mso 9]>
+<v:background xmlns:v=3D"urn:schemas-microsoft-com:vml" fill=3D"t">
+    <v:fill type=3D"tile" size=3D"100%,100%" color=3D"#ffffff"/>
+</v:background>
+<![endif]-->
+    <div class=3D"hse-body-background" lang=3D"pt" style=3D"background-colo=
+r:#000000" bgcolor=3D"#000000">
+      <table role=3D"presentation" class=3D"hse-body-wrapper-table" cellpad=
+ding=3D"0" cellspacing=3D"0" style=3D"margin:0; padding:0; width:100% !impo=
+rtant; min-width:320px !important; height:100% !important" width=3D"100%" h=
+eight=3D"100%">
+        <tbody><tr>
+          <td class=3D"hse-body-wrapper-td" valign=3D"top" style=3D"font-fa=
+mily:Arial, sans-serif; font-size:18px; color:#ffffff; word-break:break-wor=
+d; padding-top:20px; padding-bottom:20px">
+            <div id=3D"hs_cos_wrapper_main" class=3D"hs_cos_wrapper hs_cos_=
+wrapper_widget hs_cos_wrapper_type_dnd_area" style=3D"color: inherit; font-=
+size: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget" d=
+ata-hs-cos-type=3D"dnd_area">  <div id=3D"section-0" class=3D"hse-section h=
+se-section-first" style=3D"padding-left:10px; padding-right:10px">
+   =20
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; margin:0 auto; background-color:#000000; padding-bottom:40px; pad=
+ding-top:40px" bgcolor=3D"#000000">
+   =20
+    <!--[if (mso)|(IE)]>
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#000000">
+      <tr style=3D"background-color:#000000;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;padding-bottom:40px; padding-top:=
+40px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column-0-0" class=3D"hse-column hse-size-12">
+  <div id=3D"hs_cos_wrapper_module-0-0-0" class=3D"hs_cos_wrapper hs_cos_wr=
+apper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; font-size=
+: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-=
+hs-cos-type=3D"module"><table class=3D"hse-image-wrapper" role=3D"presentat=
+ion" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+    <tr>
+      <td class=3D"hs_padded" align=3D"center" valign=3D"top" style=3D"font=
+-family:Arial, sans-serif; color:#ffffff; word-break:break-word; text-align=
+:center; padding:30px 20px; font-size:0px">
+        <img alt=3D"python pandas" src=3D"https://empresas.alura.com.br/hs-=
+fs/hubfs/python%20pandas.png?width=3D534&amp;upscale=3Dtrue&amp;name=3Dpyth=
+on%20pandas.png" style=3D"outline:none; text-decoration:none; max-width:100=
+%; font-size:16px" width=3D"267" align=3D"middle">
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+<div id=3D"hs_cos_wrapper_module-0-0-1" class=3D"hs_cos_wrapper hs_cos_wrap=
+per_widget hs_cos_wrapper_type_module" style=3D"color: inherit; font-size: =
+inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs=
+-cos-type=3D"module"><table class=3D"hse-image-wrapper" role=3D"presentatio=
+n" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+    <tr>
+      <td class=3D"hs_padded" align=3D"center" valign=3D"top" style=3D"font=
+-family:Arial, sans-serif; color:#ffffff; word-break:break-word; text-align=
+:center; padding:10px 20px; font-size:0px">
+        <img alt=3D"27doc" src=3D"https://empresas.alura.com.br/hs-fs/hubfs=
+/27doc.png?width=3D738&amp;upscale=3Dtrue&amp;name=3D27doc.png" style=3D"ou=
+tline:none; text-decoration:none; max-width:100%; font-size:16px" width=3D"=
+369" align=3D"middle">
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:18px; color:#ffffff; word-break:brea=
+k-word; padding:30px 20px 10px"><div id=3D"hs_cos_wrapper_module-0-0-2" cla=
+ss=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" styl=
+e=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos=
+-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_wrap=
+per_module-0-0-2_" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wra=
+pper_type_rich_text" style=3D"color: inherit; font-size: inherit; line-heig=
+ht: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"rich_=
+text"><p style=3D"font-size:18px; line-height:150%; font-weight:normal">E a=
+=C3=AD, Lisandra Fernanda de, conseguiu desenvolver o desafio do primeiro d=
+ia e j=C3=A1 est=C3=A1 tudo pronto para o pr=C3=B3ximo?<br><br>S=C3=B3 pra =
+garantir, vou deixar sempre a minha resolu=C3=A7=C3=A3o l=C3=A1 no final de=
+ste e-mail, beleza? Assim voc=C3=AA pode comparar com a sua, mas n=C3=A3o e=
+sque=C3=A7a de&nbsp;c<span style=3D"font-weight: bold;">ompartilhar comigo =
+as suas resolu=C3=A7=C3=B5es, quero ver tamb=C3=A9m!</span></p></div></div>=
+</td></tr></tbody></table>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:18px; color:#ffffff; word-break:brea=
+k-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module-1-0-0" class=3D=
+"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"=
+color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos-gene=
+ral-type=3D"widget" data-hs-cos-type=3D"module"><table role=3D"none" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"vertical-align:top" wid=
+th=3D"100%">
+  <tbody><tr>
+    <td align=3D"center" style=3D"font-family:Arial, sans-serif; color:#fff=
+fff; font-size:0; word-break:break-word">
+      <p style=3D"font-size:1px;border-top:2px solid #ffff03;width:100%;mar=
+gin:0 auto;"></p>
+      <!--[if mso]>
+        <table role=3D"none" align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"font-size:1px;border-top:2px solid #ffff03;wid=
+th:560px;">
+          <tr>
+            <td style=3D"height:0;line-height:0">&nbsp;</td>
+          </tr>
+        </table>
+      <![endif]-->
+    </td>
+  </tr>
+</tbody></table></div></td></tr></tbody></table>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:18px; color:#ffffff; word-break:brea=
+k-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module-2-0-1" class=3D=
+"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"=
+color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos-gene=
+ral-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_wrapper_m=
+odule-2-0-1_" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_=
+type_rich_text" style=3D"color: inherit; font-size: inherit; line-height: i=
+nherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"rich_text"=
+><p style=3D"font-size:18px; line-height:150%; font-weight:normal"><span st=
+yle=3D"color: #ffffff;">Hoje =C3=A9 o segundo dia do seu desafio&nbsp;#7Day=
+sOfCode&nbsp;com&nbsp;Python Pandas, bora praticar?</span><br><br><span sty=
+le=3D"color: #ffffff;">Ontem voc=C3=AA importou e organizou os dados. Hoje,=
+ voc=C3=AA ir=C3=A1 come=C3=A7ar a manipul=C3=A1-los, ou seja,&nbsp;tirar o=
+ que n=C3=A3o for necess=C3=A1rio, agrupar dados, atribuir novas informa=C3=
+=A7=C3=B5es, etc.</span><br><br><span style=3D"color: #ffffff;">Claro, os d=
+ados precisam&nbsp;fazer sentido&nbsp;e estar preparados para o&nbsp;contex=
+to da an=C3=A1lise&nbsp;a ser realizada. Por isso, a =E2=80=9Climpeza=E2=80=
+=9D dos dados =C3=A9 uma parte essencial em um projeto de ci=C3=AAncia de d=
+ados.</span><br><br><span style=3D"color: #ffffff;">Voc=C3=AA ir=C3=A1 inic=
+iar a&nbsp;limpeza&nbsp;e&nbsp;atribuir mais contexto&nbsp;aos seus dados p=
+ara depois&nbsp;aprofundar-se nas an=C3=A1lises.</span><br><br><span style=
+=3D"color: #ffffff;">A Ci=C3=AAncia de Dados =C3=A9 uma =C3=A1rea interdisc=
+iplinar que abrange&nbsp;programa=C3=A7=C3=A3o,&nbsp;matem=C3=A1tica/estat=
+=C3=ADstica&nbsp;e&nbsp;conhecimento do neg=C3=B3cio. Seu objetivo =C3=A9 e=
+xtrair de dados, informa=C3=A7=C3=B5es =C3=BAteis que agregam valor e resol=
+vem problemas. Entender o neg=C3=B3cio =C3=A9 fundamental para que n=C3=A3o=
+ se tenha an=C3=A1lises sem explica=C3=A7=C3=B5es ou mesmo sem o foco neces=
+s=C3=A1rio para a resolu=C3=A7=C3=A3o dos problemas.</span><br><br><span st=
+yle=3D"color: #ffffff;">Voc=C3=AA deve ter visto que tem uma coluna identif=
+icada como =E2=80=9Clocaliza=C3=A7=C3=A3o=E2=80=9D e diversos n=C3=BAmeros =
+nela, mas voc=C3=AA sabe o que significam estes n=C3=BAmeros?</span><br><br=
+></p>
+<div style=3D"line-height:150%; padding-left:40px"><span style=3D"color: #f=
+fffff;"><span style=3D"font-weight: normal;">"Os itens do acervo em uma bib=
+lioteca s=C3=A3o organizados por um sistema de classifica=C3=A7=C3=A3o de a=
+cordo com o respectivo tema. Existem diversos sistemas, mas este conjunto e=
+st=C3=A1 de acordo com a&nbsp;</span><a href=3D"https://empresas.alura.com.=
+br/e3t/Ctc/I8+113/d2z6gD04/VWX6ZJ3mHDBKV73CSB78R_5rVZjc4S5BKYd3N7jDJwj3lYM-=
+W8wLKSR6lZ3nzW17GMr-2yJZqqN20bkJfR37p8W5dmkq62G-QtvVDChNT5YZZDgW2pL_XG5FkdD=
+PW3kHh_y80Ft7CW2Mtk3H1NtS7ZW72GVGS8m4-hRW6tn77X6wMQpBVLf61g7bxZRyW8Br2kt99r=
+MKcW1kvX564ZFgDXN2hW6S5BP-qSVr6YH88W4ccQW66J8N06nZD-vW6vLRGn4lcC9fW6mQr6s40=
+mSQnN4pGmZv1vMcXW6ZBZh96qQkMrW67svmT6sjrPLW9lBhsY4BKV3sW3ftnJT6pXkdrW54S3xk=
+6RvdCMW1kFMvs5_-sKZW7xwNxk6C0gMxW7XjMmm3zCcKgW4CQRy77CSMyvN66wNbxBds79f7nrc=
+YC04" target=3D"_blank" style=3D"font-weight:normal; color:#ffffff" rel=3D"=
+noopener" data-ac-default-color=3D"1" data-hs-link-id=3D"0" data-hs-link-id=
+-v2=3D"r1xlVp1f">CDU - Classifica=C3=A7=C3=A3o Decimal Universa</a><span st=
+yle=3D"font-weight: normal;">l. Esta classifica=C3=A7=C3=A3o =C3=A9 decimal=
+, pois varia de acordo com a classe de cada assunto:</span></span></div>
+<p style=3D"font-size:18px; line-height:150%; font-weight:normal">&nbsp;</p=
+>
+<div style=3D"line-height:150%">
+<ul style=3D"line-height:175%">
+<li><span style=3D"font-weight: normal; color: #ffffff;">000 a 099: General=
+idades. Ci=C3=AAncia e conhecimento.</span></li>
+<li><span style=3D"font-weight: normal; color: #ffffff;">100 a 199:&nbsp;Fi=
+losofia&nbsp;e&nbsp;psicologia.</span></li>
+<li><span style=3D"font-weight: normal; color: #ffffff;">200 a 299:&nbsp;Re=
+ligi=C3=A3o.</span></li>
+<li><span style=3D"font-weight: normal; color: #ffffff;">300 a 399:&nbsp;Ci=
+=C3=AAncias sociais.</span></li>
+<li><span style=3D"font-weight: normal; color: #ffffff;">400 a 499: Classe =
+vaga. Provisoriamente n=C3=A3o ocupada.</span></li>
+<li><span style=3D"font-weight: normal; color: #ffffff;">500 a 599:&nbsp;Ma=
+tem=C3=A1tica&nbsp;e&nbsp;ci=C3=AAncias naturais.</span></li>
+<li><span style=3D"font-weight: normal; color: #ffffff;">600 a 699:&nbsp;Ci=
+=C3=AAncias aplicadas.</span></li>
+<li><span style=3D"font-weight: normal; color: #ffffff;">700 a 799:&nbsp;Be=
+las artes.</span></li>
+<li><span style=3D"font-weight: normal; color: #ffffff;">800 a 899:&nbsp;Li=
+nguagem.&nbsp;L=C3=ADngua.&nbsp;Lingu=C3=ADstica.</span></li>
+<li><span style=3D"font-weight: normal; color: #ffffff;">900 a 999:&nbsp;Ge=
+ografia.&nbsp;Biografia.&nbsp;Hist=C3=B3ria."</span></li>
+</ul>
+</div>
+<p style=3D"font-size:18px; line-height:150%; font-weight:normal"><br><span=
+ style=3D"color: #ffffff;">Portanto, se um material tiver um c=C3=B3digo de=
+ localiza=C3=A7=C3=A3o 720, ele est=C3=A1 dentro da classe geral de =E2=80=
+=9C<span style=3D"font-weight: bold;">Belas Artes</span>=E2=80=9D; ou se ti=
+ver um c=C3=B3digo 028, estar=C3=A1 dentro da classe geral de =E2=80=9C<spa=
+n style=3D"font-weight: bold;">Generalidades. Ci=C3=AAncia e conhecimento</=
+span>=E2=80=9D.</span><br><br><span style=3D"color: #ffffff;">Para isso,&nb=
+sp;crie uma nova coluna&nbsp;com os valores da localiza=C3=A7=C3=A3o, para =
+refletir a respectiva classe geral na CDU.</span><br><br><span style=3D"col=
+or: #ffffff;">Voc=C3=AA precisar=C3=A1 ainda&nbsp;excluir&nbsp;alguns dados=
+ e&nbsp;modificar&nbsp;outros.&nbsp;&nbsp;</span><br><br><span style=3D"col=
+or: #ffffff;">A coluna <em><span style=3D"font-weight: normal;">"registro_s=
+istema"</span></em>, por exemplo, n=C3=A3o est=C3=A1 fazendo sentido para e=
+ssa an=C3=A1lise, por isso voc=C3=AA pode exclui-la.</span><br><span style=
+=3D"color: #ffffff;">J=C3=A1 a coluna da matricula (<em>=E2=80=9Cmatricula_=
+ou_siape=E2=80=9D</em>) n=C3=A3o est=C3=A1 com um formato muito leg=C3=ADve=
+l. Transforme-a em formato&nbsp;<em>String</em>.</span></p></div></div></td=
+></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section-1" class=3D"hse-section" style=3D"padding-left:10px; p=
+adding-right:10px">
+   =20
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; margin:0 auto; background-color:#000000" bgcolor=3D"#000000">
+   =20
+    <!--[if (mso)|(IE)]>
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#000000">
+      <tr style=3D"background-color:#000000;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column-1-0" class=3D"hse-column hse-size-12">
+    <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D=
+"font-family:Arial, sans-serif; font-size:18px; color:#ffffff; word-break:b=
+reak-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_169238641876=
+22" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_modul=
+e" style=3D"color: inherit; font-size: inherit; line-height: inherit;" data=
+-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><table role=3D"=
+none" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"vertical-al=
+ign:top" width=3D"100%">
+  <tbody><tr>
+    <td align=3D"center" style=3D"font-family:Arial, sans-serif; color:#fff=
+fff; font-size:0; word-break:break-word">
+      <p style=3D"font-size:1px;border-top:2px solid #ffff03;width:100%;mar=
+gin:0 auto;"></p>
+      <!--[if mso]>
+        <table role=3D"none" align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"font-size:1px;border-top:2px solid #ffff03;wid=
+th:560px;">
+          <tr>
+            <td style=3D"height:0;line-height:0">&nbsp;</td>
+          </tr>
+        </table>
+      <![endif]-->
+    </td>
+  </tr>
+</tbody></table></div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section-2" class=3D"hse-section" style=3D"padding-left:10px; p=
+adding-right:10px">
+   =20
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; margin:0 auto; background-color:#000000" bgcolor=3D"#000000">
+   =20
+    <!--[if (mso)|(IE)]>
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#000000">
+      <tr style=3D"background-color:#000000;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column-2-0" class=3D"hse-column hse-size-12">
+    <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D=
+"font-family:Arial, sans-serif; font-size:18px; color:#ffffff; word-break:b=
+reak-word; padding:30px 20px 10px"><div id=3D"hs_cos_wrapper_module-2-0-0" =
+class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" s=
+tyle=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-=
+cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_w=
+rapper_module-2-0-0_" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_=
+wrapper_type_rich_text" style=3D"color: inherit; font-size: inherit; line-h=
+eight: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"ri=
+ch_text"><div style=3D"line-height:175%"><strong><span style=3D"background-=
+color: yellow; padding: 5px 20px; font-size: 25px; color: black;">DICA</spa=
+n></strong></div></div></div></td></tr></tbody></table>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:18px; color:#ffffff; word-break:brea=
+k-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module_16923864037411"=
+ class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" =
+style=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs=
+-cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_=
+wrapper_module_16923864037411_" class=3D"hs_cos_wrapper hs_cos_wrapper_widg=
+et hs_cos_wrapper_type_rich_text" style=3D"color: inherit; font-size: inher=
+it; line-height: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-=
+type=3D"rich_text"><p style=3D"font-size:18px; line-height:150%; font-weigh=
+t:normal">Para mapear os valores, voc=C3=AA pode usar uma l=C3=B3gica condi=
+cional de acordo com a numera=C3=A7=C3=A3o e armazen=C3=A1-los em uma lista=
+.</p></div></div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section-3" class=3D"hse-section" style=3D"padding-left:10px; p=
+adding-right:10px">
+   =20
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; margin:0 auto; background-color:#000000" bgcolor=3D"#000000">
+   =20
+    <!--[if (mso)|(IE)]>
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#000000">
+      <tr style=3D"background-color:#000000;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column-3-0" class=3D"hse-column hse-size-12">
+    <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D=
+"font-family:Arial, sans-serif; font-size:18px; color:#ffffff; word-break:b=
+reak-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module-3-0-0" class=
+=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=
+=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos-=
+general-type=3D"widget" data-hs-cos-type=3D"module"><table role=3D"none" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"vertical-align:top"=
+ width=3D"100%">
+  <tbody><tr>
+    <td align=3D"center" style=3D"font-family:Arial, sans-serif; color:#fff=
+fff; font-size:0; word-break:break-word">
+      <p style=3D"font-size:1px;border-top:2px solid #ffff03;width:100%;mar=
+gin:0 auto;"></p>
+      <!--[if mso]>
+        <table role=3D"none" align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"font-size:1px;border-top:2px solid #ffff03;wid=
+th:560px;">
+          <tr>
+            <td style=3D"height:0;line-height:0">&nbsp;</td>
+          </tr>
+        </table>
+      <![endif]-->
+    </td>
+  </tr>
+</tbody></table></div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section-4" class=3D"hse-section" style=3D"padding-left:10px; p=
+adding-right:10px">
+   =20
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; margin:0 auto; background-color:#000000" bgcolor=3D"#000000">
+   =20
+    <!--[if (mso)|(IE)]>
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#000000">
+      <tr style=3D"background-color:#000000;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column-4-0" class=3D"hse-column hse-size-12">
+    <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D=
+"font-family:Arial, sans-serif; font-size:18px; color:#ffffff; word-break:b=
+reak-word; padding:30px 20px 10px"><div id=3D"hs_cos_wrapper_module-4-0-0" =
+class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" s=
+tyle=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-=
+cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_w=
+rapper_module-4-0-0_" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_=
+wrapper_type_rich_text" style=3D"color: inherit; font-size: inherit; line-h=
+eight: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"ri=
+ch_text"><div style=3D"line-height:175%"><strong><span style=3D"background-=
+color: #39f6eb; padding: 5px 20px; font-size: 25px; color: black;">EXTRA</s=
+pan></strong></div></div></div></td></tr></tbody></table>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:18px; color:#ffffff; word-break:brea=
+k-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module-4-0-1" class=3D=
+"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"=
+color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos-gene=
+ral-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_wrapper_m=
+odule-4-0-1_" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_=
+type_rich_text" style=3D"color: inherit; font-size: inherit; line-height: i=
+nherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"rich_text"=
+><p style=3D"font-size:18px; line-height:150%; font-weight:normal"><span st=
+yle=3D"color: #ffffff;">D=C3=AA uma olhada nesse&nbsp;<a href=3D"https://em=
+presas.alura.com.br/e3t/Ctc/I8+113/d2z6gD04/VWX6ZJ3mHDBKV73CSB78R_5rVZjc4S5=
+BKYd3N7jDJwC3lYM-W95jsWP6lZ3n8W5vw8yJ7v9lzYW2Y08GG21LYbKW3yVzXh6rM7HvW3_qqv=
+29k1Xc4W4bzLlN7pWv8gVky6Z520DjNKW5z7sm68N7FJlW7pdr6C4pG5FBW2NVfmP4TJ61JW4Tx=
+yY_7nzwL5W2-kYDz3tV62PW50RCK87gwcF_W3vpCyv7-ldVcW9hC4kj6kxHPbW8FwbHt6twQpzW=
+1T5xjc1hFm4FW87Qhtf1b59HXW26ClKn8LSqhrV6p8hF7fdWlMVLn5WZ7vXXF4W5-FbYr5VCqQW=
+W4qcrqk57KHDDVWxbRG5w1YQGN3vbQ3QTHMnJW2ts2C98N84PkN2C4gJt84k0nW7SGTHm8zCT96=
+W2Mc1804n9r3mW184Mh190htc5W7kctFj9m0RZGf7YJs6H04" target=3D"_blank" style=
+=3D"color:#ffffff" rel=3D"noopener" data-ac-default-color=3D"1" data-hs-lin=
+k-id=3D"0" data-hs-link-id-v2=3D"kU5MMF19">texto da Alura</a>&nbsp;sobre co=
+mo adicionar elementos em uma lista.</span></p></div></div></td></tr></tbod=
+y></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section-5" class=3D"hse-section" style=3D"padding-left:10px; p=
+adding-right:10px">
+   =20
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; margin:0 auto; background-color:#000000" bgcolor=3D"#000000">
+   =20
+    <!--[if (mso)|(IE)]>
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#000000">
+      <tr style=3D"background-color:#000000;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column-5-0" class=3D"hse-column hse-size-12">
+    <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D=
+"font-family:Arial, sans-serif; font-size:18px; color:#ffffff; word-break:b=
+reak-word; padding:30px 20px 10px"><div id=3D"hs_cos_wrapper_module-5-0-0" =
+class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" s=
+tyle=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-=
+cos-general-type=3D"widget" data-hs-cos-type=3D"module"><table role=3D"none=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"vertical-align:=
+top" width=3D"100%">
+  <tbody><tr>
+    <td align=3D"center" style=3D"font-family:Arial, sans-serif; color:#fff=
+fff; font-size:0; word-break:break-word">
+      <p style=3D"font-size:1px;border-top:2px solid #ffff03;width:100%;mar=
+gin:0 auto;"></p>
+      <!--[if mso]>
+        <table role=3D"none" align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"font-size:1px;border-top:2px solid #ffff03;wid=
+th:560px;">
+          <tr>
+            <td style=3D"height:0;line-height:0">&nbsp;</td>
+          </tr>
+        </table>
+      <![endif]-->
+    </td>
+  </tr>
+</tbody></table></div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section-6" class=3D"hse-section" style=3D"padding-left:10px; p=
+adding-right:10px">
+   =20
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; margin:0 auto; background-color:#000000" bgcolor=3D"#000000">
+   =20
+    <!--[if (mso)|(IE)]>
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#000000">
+      <tr style=3D"background-color:#000000;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column-6-0" class=3D"hse-column hse-size-12">
+    <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D=
+"font-family:Arial, sans-serif; font-size:18px; color:#ffffff; word-break:b=
+reak-word; padding:30px 20px 10px"><div id=3D"hs_cos_wrapper_module-6-0-0" =
+class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" s=
+tyle=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-=
+cos-general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_w=
+rapper_module-6-0-0_" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_=
+wrapper_type_rich_text" style=3D"color: inherit; font-size: inherit; line-h=
+eight: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"ri=
+ch_text"><div style=3D"font-size:18px; line-height:126%"><strong><span styl=
+e=3D"background-color: yellow; padding: 5px 20px; color: black;">RESPOSTA D=
+O EXERC=C3=8DCIO DO DIA 1</span></strong></div></div></div></td></tr></tbod=
+y></table>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:18px; color:#ffffff; word-break:brea=
+k-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module-6-0-1" class=3D=
+"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=3D"=
+color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos-gene=
+ral-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_wrapper_m=
+odule-6-0-1_" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_=
+type_rich_text" style=3D"color: inherit; font-size: inherit; line-height: i=
+nherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"rich_text"=
+><p style=3D"font-size:18px; line-height:125%"><span style=3D"font-family: =
+'Courier New', Courier, monospace;">- <span style=3D"color: #ffffff;"><a hr=
+ef=3D"https://empresas.alura.com.br/e3t/Ctc/I8+113/d2z6gD04/VWX6ZJ3mHDBKV73=
+CSB78R_5rVZjc4S5BKYd3N7jDJtx5kvg8W50kH_H6lZ3mKW8Sbvpz2887RDN7KDLvxB8SbDW1YD=
+4rF2xdHHLW6qH-Jp7kW9QxW8trjHG6m-nwGW74Kd_B8N7sGBW7VS2HK2qQLGTW35lSH77Rlcc_W=
+5rCkjY9jh0tqW3NRyL989rsTPV62qZl1RZBfDW80W6vv1bPRpDW3cXbwK5_0XNsW1GJPLK1qmSs=
+JW6m1RK11DNN-5N1FdhFTdrC3JW9bQ6fN1dHM1hW1Ynh206wnG9qW3Q0VCC8PRYQBV4gxS52qHy=
+0rW40F2c28wMMNPW4DZwyG1lvbhgW1LtKY_3y5hNLW17YxPX2mmQlYW2_dg613CqHZpW24zWCr2=
+RLPzqW603Rc_7d7grhVzNnqv4PtSZvVZqmGy5jG45BW3mJPZH3FmpN-W5lB3-B52mv-3W6M7Nhn=
+3zSdpwf4xd6yP04" style=3D"color:#ffffff" rel=3D"noopener" data-hs-link-id=
+=3D"0" data-hs-link-id-v2=3D"iaVVD7DS" target=3D"_blank">Solu=C3=A7=C3=A3o =
+do&nbsp;Dia 1</a></span></span></p></div></div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section-7" class=3D"hse-section" style=3D"padding-left:10px; p=
+adding-right:10px">
+   =20
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; margin:0 auto; background-color:#000000" bgcolor=3D"#000000">
+   =20
+    <!--[if (mso)|(IE)]>
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#000000">
+      <tr style=3D"background-color:#000000;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column-7-0" class=3D"hse-column hse-size-12">
+    <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D=
+"font-family:Arial, sans-serif; font-size:18px; color:#ffffff; word-break:b=
+reak-word; padding:20px 20px 30px"><div id=3D"hs_cos_wrapper_module-7-0-0" =
+class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" s=
+tyle=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-=
+cos-general-type=3D"widget" data-hs-cos-type=3D"module"><table role=3D"none=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"vertical-align:=
+top" width=3D"100%">
+  <tbody><tr>
+    <td align=3D"center" style=3D"font-family:Arial, sans-serif; color:#fff=
+fff; font-size:0; word-break:break-word">
+      <p style=3D"font-size:1px;border-top:2px solid #ffff03;width:100%;mar=
+gin:0 auto;"></p>
+      <!--[if mso]>
+        <table role=3D"none" align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"font-size:1px;border-top:2px solid #ffff03;wid=
+th:560px;">
+          <tr>
+            <td style=3D"height:0;line-height:0">&nbsp;</td>
+          </tr>
+        </table>
+      <![endif]-->
+    </td>
+  </tr>
+</tbody></table></div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section-8" class=3D"hse-section" style=3D"padding-left:10px; p=
+adding-right:10px">
+   =20
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; margin:0 auto; background-color:#000000" bgcolor=3D"#000000">
+   =20
+    <!--[if (mso)|(IE)]>
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#000000">
+      <tr style=3D"background-color:#000000;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column-8-0" class=3D"hse-column hse-size-12">
+    <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D=
+"font-family:Arial, sans-serif; font-size:18px; color:#ffffff; word-break:b=
+reak-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module-8-0-0" class=
+=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=
+=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos-=
+general-type=3D"widget" data-hs-cos-type=3D"module"><div id=3D"hs_cos_wrapp=
+er_module-8-0-0_" class=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrap=
+per_type_rich_text" style=3D"color: inherit; font-size: inherit; line-heigh=
+t: inherit;" data-hs-cos-general-type=3D"widget" data-hs-cos-type=3D"rich_t=
+ext"><p style=3D"font-size:18px; line-height:150%; font-weight:normal">Bom =
+desafio, te vejo amanh=C3=A3 nesse mesmo hor=C3=A1rio!<br><br>Ah, lembre-se=
+ de compartilhar o seu c=C3=B3digo no seu GitHub e nas suas redes sociais c=
+om a hashtag&nbsp;<span style=3D"font-weight: bold;">#7DaysOfCode</span>.<b=
+r><br><span style=3D"color: #f9ff00; font-weight: bold;">Francisco Foz</spa=
+n><br>Bibliotec=C3=A1rio e Analista de Dados</p></div></div></td></tr></tbo=
+dy></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section-9" class=3D"hse-section" style=3D"padding-left:10px; p=
+adding-right:10px">
+   =20
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; margin:0 auto; background-color:#000000" bgcolor=3D"#000000">
+   =20
+    <!--[if (mso)|(IE)]>
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation" width=3D"600" bgcolor=3D"#000000">
+      <tr style=3D"background-color:#000000;">
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column-9-0" class=3D"hse-column hse-size-12">
+    <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D=
+"font-family:Arial, sans-serif; font-size:18px; color:#ffffff; word-break:b=
+reak-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module-9-0-0" class=
+=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=
+=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos-=
+general-type=3D"widget" data-hs-cos-type=3D"module"><table role=3D"none" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"vertical-align:top"=
+ width=3D"100%">
+  <tbody><tr>
+    <td align=3D"center" style=3D"font-family:Arial, sans-serif; color:#fff=
+fff; font-size:0; word-break:break-word">
+      <p style=3D"font-size:1px;border-top:2px solid #ffff03;width:100%;mar=
+gin:0 auto;"></p>
+      <!--[if mso]>
+        <table role=3D"none" align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" style=3D"font-size:1px;border-top:2px solid #ffff03;wid=
+th:560px;">
+          <tr>
+            <td style=3D"height:0;line-height:0">&nbsp;</td>
+          </tr>
+        </table>
+      <![endif]-->
+    </td>
+  </tr>
+</tbody></table></div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div>
+  <div id=3D"section-10" class=3D"hse-section hse-section-last" style=3D"pa=
+dding-left:10px; padding-right:10px">
+   =20
+   =20
+      <div class=3D"hse-column-container" style=3D"min-width:280px; max-wid=
+th:600px; margin:0 auto">
+   =20
+    <!--[if (mso)|(IE)]>
+      <table align=3D"center" style=3D"width:600px;" cellpadding=3D"0" cell=
+spacing=3D"0" role=3D"presentation">
+      <tr>
+    <![endif]-->
+    <!--[if (mso)|(IE)]>
+  <td valign=3D"top" style=3D"width:600px;">
+<![endif]-->
+<!--[if gte mso 9]>
+  <table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"width:600px">
+<![endif]-->
+<div id=3D"column-10-0" class=3D"hse-column hse-size-12">
+  <div id=3D"hs_cos_wrapper_module-10-0-0" class=3D"hs_cos_wrapper hs_cos_w=
+rapper_widget hs_cos_wrapper_type_module" style=3D"color: inherit; font-siz=
+e: inherit; line-height: inherit;" data-hs-cos-general-type=3D"widget" data=
+-hs-cos-type=3D"module"><table class=3D"hse-image-wrapper" role=3D"presenta=
+tion" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+  <tbody>
+    <tr>
+      <td class=3D"hs_padded" align=3D"center" valign=3D"top" style=3D"font=
+-family:Arial, sans-serif; color:#ffffff; word-break:break-word; text-align=
+:center; padding:30px 20px; font-size:0px">
+        <img alt=3D"429eb4e4-71a8-4ea8-8d19-67ba6f4a95fe" src=3D"https://em=
+presas.alura.com.br/hs-fs/hubfs/429eb4e4-71a8-4ea8-8d19-67ba6f4a95fe.png?wi=
+dth=3D130&amp;upscale=3Dtrue&amp;name=3D429eb4e4-71a8-4ea8-8d19-67ba6f4a95f=
+e.png" style=3D"outline:none; text-decoration:none; max-width:100%; font-si=
+ze:16px" width=3D"65" align=3D"middle">
+      </td>
+    </tr>
+  </tbody>
+</table></div>
+  <table role=3D"presentation" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" class=3D"" style=3D""><tbody><tr><td class=3D"hs_padded" style=3D"fo=
+nt-family:Arial, sans-serif; font-size:18px; color:#ffffff; word-break:brea=
+k-word; padding:10px 20px"><div id=3D"hs_cos_wrapper_module-10-0-1" class=
+=3D"hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=
+=3D"color: inherit; font-size: inherit; line-height: inherit;" data-hs-cos-=
+general-type=3D"widget" data-hs-cos-type=3D"module"><table role=3D"presenta=
+tion" class=3D"hse-footer hse-secondary" width=3D"100%" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"font-family:Arial, sans-serif; font-size:12px; li=
+ne-height:135%; color:#23496d; margin-bottom:0; padding:0">
+  <tbody>
+    <tr>
+      <td align=3D"center" valign=3D"top" style=3D"font-family:Arial, sans-=
+serif; font-size:18px; color:#ffffff; word-break:break-word; text-align:cen=
+ter; margin-bottom:0; line-height:135%; padding:10px 20px">
+          <p style=3D"font-size: 10px; line-height: 125%;"><span style=3D"c=
+olor: #ffffff;">Alura, Vila Mariana, S=C3=A3o Paulo, SP</span></p>
+<p style=3D"font-size: 10px; line-height: 125%;">&nbsp;</p>
+<p style=3D"font-size: 10px; line-height: 125%;"><span style=3D"color: #fff=
+fff;"><a href=3D"https://empresas.alura.com.br/hs/preferences-center/pt/dir=
+ect?data=3DW2nXS-N30h-BrW3P0X_G43zPWQW4fFJhY4kBlTGW4cv7r238kGXkW3_wpgN3jb7M=
+kW1W-_QS2zKQ2hW252x-N3bfh72W4mbNB63dbd9bW2TRdlx2KPcgNW3P8qmQ2WFwwHW2zKqjG4f=
+Ff81W2FtX-41_9NBZW2TydXd43DdHMW2Cvyf-3z7THwW3MbBG-2-LVbjW3ghkWb2v_TfLW3JVLy=
+L3dkb-dW36xdcC3M0GPRW1Q3KF83_pBkwW3yPMHz2KC89CW3NQBc-1Y_9sQW1VjBnL32xgxWW2R=
+sy6F2WxK-_W20YJ242-cdYRW1VzQR_30r5JMW2nXqs71VzlrXW2-GM2j3f__SqW1VjcVZ2xXTWL=
+W1QktVy41SwlMW3DMlL_1S4lk1W4kcsLl4twJnJW1NsL0d1QrKW4W2-MKYn2KFHKcW45PGV02YM=
+ZkSW3NXvkJ3LQ2V0W2-Jppw3yRnXlW2-bjmW3XN4q9W1Y_BYc2PWtqvW2z-_mn2sZW2JW4mm67N=
+2PWpc9W3XvDBK2KslVDW2WnnC749J_QHW32q2153ZsJ65W23gRll2-bRQ_W4t2Mzj3z9d90W41W=
+1qy2YpT7LW3Hc2K02FBnHMW3XNy913_XTLCW3_Bb053ZV95fW32pHfP2Pmhj4W4rCpDx2MBznDW=
+4rb1mb3z9-570&amp;utm_source=3Dhs_automation&amp;utm_medium=3Demail&amp;utm=
+_content=3D270877722&amp;_hsenc=3Dp2ANqtz-8AGBt59GzVk-2CCEoVJobxw5V9GlTXBTB=
+TktXIRAyE0BSzmS1xAcRBtWv43bLf5FM_V1nXc9H2Bjx59TbQ0bM1qRMVMI4epnPV3V4QDjWplb=
+pxn3k&amp;_hsmi=3D270877722" style=3D"color:#ffffff" rel=3D"noopener" data-=
+unsubscribe=3D"true" data-hs-link-id=3D"0" data-hs-link-id-v2=3D"SFRZzEXk" =
+target=3D"_blank">N=C3=A3o quero mais receber os Desafios</a></span></p>
+      </td>
+    </tr>
+  </tbody>
+</table></div></td></tr></tbody></table>
+</div>
+<!--[if gte mso 9]></table><![endif]-->
+<!--[if (mso)|(IE)]></td><![endif]-->
+    <!--[if (mso)|(IE)]></tr></table><![endif]-->
+    </div>
+  =20
+  </div></div>
+          </td>
+        </tr>
+      </tbody></table>
+    </div>
+ =20
+<img src=3D"https://empresas.alura.com.br/e3t/Cto/I8+113/d2z6gD04/VWX6ZJ3mH=
+DBKV73CSB78R_5rVZjc4S5BKYd3W7jDJfw3D3R4V1b2" alt=3D"" width=3D"1" height=3D=
+"1" border=3D"0" style=3D"display:none!important;min-height:1px!important;w=
+idth:1px!important;border-width:0!important;margin-top:0!important;margin-b=
+ottom:0!important;margin-right:0!important;margin-left:0!important;padding-=
+top:0!important;padding-bottom:0!important;padding-right:0!important;paddin=
+g-left:0!important"></body></html>
+------=_Part_26242_1850916013.1756292412544--
+
